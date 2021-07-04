@@ -1,0 +1,325 @@
+  <html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <script>
+          function myFunction() {
+                var x = document.getElementById("main");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }      
+    </script>
+
+    <style>
+          .launcher{
+             background:darkslateblue;
+             position: fixed;
+             left: 0;
+             bottom: 0;
+             border-radius: 15%;
+             width: 130px;
+             height: 70px;
+             color: cornsilk;
+             z-index: 3;
+        }
+
+        .launcher:hover {
+            background:tomato;
+            color: white;
+            border-radius: 50%;
+            height: 140px;
+            width: 140px; 
+            -o-transition: .5s;
+            -ms-transition: .5s;
+            -moz-transition: .5s;
+            -webkit-transition: .5s;
+            transition: .5s;
+        }
+
+        .rectangle-1{
+            position: absolute;
+            width: 416px;
+            height: 278px;
+            top: -1px;
+            background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+            border-radius: 10px 10px 0px 0px;
+        }
+        .rectangle-2{
+            position: relative;
+            width: 390px;
+            height: 400px;
+            left: 13px;
+            top: 210px;
+
+            background: x#FFFFFF;
+            border: 1px solid #E4E4E4;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            z-index: 1;
+
+        }
+
+        .rectangle-3{
+            position: absolute;
+            width: 416px;
+            top: 0;
+            height: 628px;
+            border: 1px solid #E4E4E4;
+            border-radius: 0px 0px 10px 10px;
+
+        }
+        .logo{
+            position: relative;
+            width: 67px;
+            height: 67px;
+            left: 38px;
+            top: 175px;
+            border-radius: 50%;
+
+            background: linear-gradient(180deg, #FF7600 0%, #FF5C00 100%);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+            z-index: 2;
+
+        }
+        .icon{
+            position: relative;
+            color: cornsilk;
+            top: 20px;
+            left: 15px;
+
+
+        }
+
+        .heading{
+        position: absolute;
+        width: 53px;
+        height: 39px;
+        left: 56px;
+        top: 10px;
+
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 39px;
+
+        color: #FFFFFF;
+
+
+        }
+
+        .greeting{
+
+        position: absolute;
+        
+        height: 29px;
+        left: 56px;
+        top: 65px;
+
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 29px;
+      
+
+        color: #FFFFFF;
+
+
+        }
+
+        .caption{
+           
+
+        position: absolute;
+        width: 228px;
+        height: 46px;
+        left: 56px;
+        top: 104px;
+
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        
+
+        color: #FFFFFF;
+
+
+        }
+
+        .dialog-box-title{
+           
+
+        
+
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+
+        color: #2D2D2D;
+
+
+        }
+
+        .well{
+            background-color: #FFFFFF;;
+        }
+
+        .target{
+            border-radius: 8px;
+            
+            width: 339px;
+            height: 50px;
+            
+
+            background: #FFFFFF;
+            border: 1px solid #E1E1E1;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+
+
+        }
+        .button-txt{
+            display: list-item;
+            font-family: DM Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;
+            font-style: normal;
+            vertical-align: top;
+
+        }
+        .button-txt::marker{
+            content:"◉";
+            color:orange;
+
+        }
+
+
+        .execution-button-txt{
+            
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        }
+
+        .btn-execution{
+            position: relative;
+            width: 268px;
+            height: 44px;
+            top:0px;
+            left: 40px;
+            background: #FFFFFF;
+            border: 1px solid hsl(0, 0%, 82%);
+            box-sizing: border-box;
+            box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 100px;
+        }    
+
+        
+        #main {
+          max-height: 90vh;
+          max-width: 90vw;
+          position:absolute;
+          display: none;
+          z-index: 2;
+          animation-name: slide;
+          animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+          animation-duration: 0.50s;      
+          
+        }
+
+        @keyframes slide {
+        0% {
+        
+        bottom: 0%;
+        opacity: 0%;
+
+        }
+        
+        100% {
+        
+        bottom: 100%;
+        opacity: 100%;
+
+      
+
+    }}
+
+    .fa-question-circle{
+       
+        color: rgb(255, 123, 0);
+      }  
+    </style>
+</head>
+
+<div id="main">
+<div class="rectangle-1">
+    <h1 class="heading">IRIS</h1>
+    <h2 class="greeting">Hello          &#128075;&#127995;</h2> 
+    <h3 class="caption">I am Iris, a Virtual Assistant
+    How may I help you?</h3>
+       
+    <div class="logo">
+            <p><i class="fas fa-robot icon fa-2x"></i></p>
+
+        </div>
+    
+    </div>
+    <div class="rectangle-3">
+
+    
+    <div class="rectangle-2">
+        <div class="column">
+            <div class="well col-xs-auto col-md-auto">
+                <h3 class="dialog-box-title">Frequently Asked Questions <i class="fa fa-question-circle"></i></h3>
+                
+                    <div class="">
+                    <button class="btn target" id="target1"><p class="button-txt">Can I redeem my original FB before the original term?</button>
+                    </div>
+                    <div class="">
+                    <button class="btn target" id="target2"><p class="button-txt">How do I pay my Credit card bill?</p></button>
+                    </div>
+                    <div class="">
+                    <button class="btn target" id="target3"><p class="button-txt">How can I get my Account Statement?</p></button>
+                    </div>
+                    <div class="">
+                    <button class="btn target" id="target3"><p class="button-txt">What is the tenure of Fixed deposit?</p></button>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="btn btn-execution"><p class="execution-button-txt"><i class="glyphicon glyphicon-comment"></i> Start a New Conversation</p></button>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="launcher">
+    <button class="launcher" id="launcher" onclick="myFunction()"><strong>Need Assistance? (Talk to us)</strong></button>
+</div>
+</html>
